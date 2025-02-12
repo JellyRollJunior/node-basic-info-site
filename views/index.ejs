@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Homepage</title>
+  </head>
+  <body>
+    <%- include('navbar', {links: links}) %>
+  </body>
+  <ul>
+    <% users.forEach((user) => { %>
+      <%- include('users/user', {user: user}); %>
+    <% }); %>
+  </ul>
+</html>
